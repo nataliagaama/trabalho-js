@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('/trabalho-web-main/imgsuiça/banner.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    text-align: center;
+}
+
+.banner::before {
+    background-color: rgba(0, 0, 0, 0.644) !important;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.banner h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 100px;
+    color: rgb(143, 0, 0);
+
+}
+
+.banner p {
+    font-size: 30px;
+    width: 800px;
+}
+
+header {
+    background-color: #ffffff;
+                -webkit-box-shadow: -5px 24px 40px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: -5px 24px 40px 0px rgba(0,0,0,0.75);
+                box-shadow: -5px 24px 40px 0px rgba(0,0,0,0.75);
+                
+    color: rgb(107, 0, 0);
+
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(107, 0, 0);
+    font-size: 18px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(107, 0, 0);
+    margin: 5px 0;
+}
+
+
+.curiosidades h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin: 20px;
+}
+
+
+.card {
+    background-color: bisque;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.644);
+    width: 300px;
+    text-align: center;
+    transition: .2s;
+
+}
+
+.card:hover {
+    background-color: rgb(202, 202, 202);
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+}
+
+.card p {
+    margin: 10px 0px 10px 10px;
+}
+
+.sobre {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+ .sobre-container {
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;
+}
+
+.sobre-container h1 {
+    color: rgb(80, 4, 4);
+    font-size: 50px;
+}
+
+.sobre-container p {
+    color: rgb(80, 4, 4);
+    font-size: 22px;
+    margin: 20px;
+}
+
+/*sobre new com modaal*/
+.modal-sobre{
+    display: none;
+}
+.btn {
+    background-color:rgb(80, 4, 4);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .5s;
+}
+.btn:hover{
+    background-color:rgb(49, 2, 2);
+
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+}
+.modal-content h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #970606;
+    font-weight: bold;
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*galeria*/
+
+.galery{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+
+}
+
+ /* Estilo da galeria */
+ .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.galeria img {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 15px;
+    margin-top: 50px;;
+}
+.galery h1{
+    color: rgb(80, 4, 4);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo do modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.modal .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/*form*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+.form h1{
+    text-align: center;
+}
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input:focus, textarea:focus {
+    border-color: #007BFF;
+}
+.enviar {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+.mensagem {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.sucesso {
+    color: green;
+}
+.erro {
+    color: red;
+}
+
+
+
+@media only screen and (max-width:600px){
+
+    .banner p{
+        font-size: 18px;
+        width: 350px;
+    }
+
+    .curiosidades{
+        display: flex; 
+        flex-direction: column;
+        height: auto;
+    }
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .sobre{
+        display: flex; 
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sobre .sobre-container p{
+        width: 350px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    .sobre .sobre-container{
+        width: 550px;
+    }
+
+    .sobre .sobre-container h1{
+        width: 550px;
+        text-align: center;
+    }
+    .sobre h1{
+        font-size: 24px;
+    }
+    .sobre p{
+        font-size: 24px;
+    }
+    .sobre img {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: white;
+        color: #1e1e1e;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+  
+   
+}
+nav.active ul {
+    display: flex;
+}

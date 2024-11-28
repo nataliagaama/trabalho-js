@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belezas naturais da Suiça</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Suíça</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#galery">Galeria</a></li>
+                <li><a href="#form">Contato</a></li>
+
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <section class="banner" id="inicio">
+        <div class="content">
+            <h1 class="titulo"> Suiça</h1>
+            <p class="subtitulo">A Suíça é um país montanhoso conhecido por sua beleza natural, cidades limpas e organização. Famosa por seus chocolates, queijos e relógios, a Suíça também é um centro financeiro global. Com quatro idiomas oficiais (alemão, francês, italiano e romanche), a diversidade cultural é um aspecto importante da sua identidade. O país é famoso por sua neutralidade política e por sediar várias organizações internacionais.</p>
+        </div>
+
+    </section>
+    <section class="curiosidades" id="curiosidades">
+        <h2>Belezas Naturais</h2>
+        <div class="top">
+            <div class="cards-container">
+                <div class="card">
+                    <img src="imgsuiça/Matterhorn.jpg" alt="">
+                    <h3>Matterhorn</h3>
+                    <p>Uma das montanhas mais icônicas do mundo, localizada nos Alpes suíços.É popular entre alpinistas e esquiadores,com seu formato piramidal distinto.</p>
+                </div>
+
+                <div class="card">
+                    <img src="imgsuiça/lago genebra.jpg" alt="">
+                    <h3>Lago de Genebra</h3>
+                    <p>Um dos maiores lagos da Europa Ocidental,cercado por montanhas,com uma vista espetacular tanto do lado suíço quanto do francês.</p>
+                </div>
+                <div class="card">
+                    <img src="imgsuiça/interlaken.jpg" alt="">
+                    <h3>Interlaken</h3>
+                    <p>Situada entre os lagos Thun e Brienz,é uma área famosa por esportes de aventura e vistas deslumbrantes das montanhas Jungfrau,Eiger e Monch.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="imgsuiça/jungfraujoch.jpg" alt="">
+                    <h3>Jungfraujoch</h3>
+                    <p>Conhecido como o "Topo da Europa", é o ponto mais alto da Europa acessível por trem, com geleiras impressionantes e paisagens alpinas magníficas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="cards-container">
+                <div class="card">
+                    <img src="imgsuiça/lago lugano.jpg" alt="">
+                    <h3>Lago Lugano</h3>
+                    <p>Localizado na fronteira com a Itália,este lago tem águas cristalinas cercadas por montanhas,criando uma mistura de clima mediterrâneo com ambiente alpino.</p>
+                </div>
+
+                <div class="card">
+                    <img src="imgsuiça/geleira de aletsch.jpg" alt="">
+                    <h3>Geleira de Aletsch</h3>
+                    <p>A maior geleira dos Alpes,parte do Patrimônio Mundial da UNESCO, com paissagens glaciais deslumbrantes e oportunidades para caminhadas.</p>
+                </div>
+                <div class="card">
+                    <img src="imgsuiça/cataratas.jpg" alt="">
+                    <h3>Cataratas do Reno</h3>
+                    <p>As maiores cataratas da Europa,perto da cidade de Schaffhausen,oferecem vistas espetaculares e atividades como passeios de barco.</p>
+                </div>
+                <div class="card">
+                    <img src="imgsuiça/parque.jpg" alt="">
+                    <h3>Parque Nacional Suiço</h3>
+                    <p>O único parque nacional da Suíça,localizado no cantão de Grisões,preserva uma grande diversidade de vida selvagem,trilhas de caminhada e paisagens intocadas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="sobre-container">
+            <h1>Sobre a Suíça</h1>
+            <p>
+                Para uma experiência completa, comece explorando as montanhas dos Alpes, como o Matterhorn e o Jungfrau. Delve na cultura local visitando cidades como Lucerna e Zurique, onde você pode apreciar a arquitetura histórica e museus. Não perca a oportunidade de degustar fondue e chocolates suíços, que são o ultimate prazer gastronômico do país.
+            </p>
+            <button id="btn-saiba-mais" class="btn">Saiba Mais</button>
+        </div>
+    </section>
+    
+    <!-- Modal -->
+    <div id="modal-sobre" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Curiosidades</h2>
+            <ul>
+                <li><b>País Sem Exército:</b> Embora tenha um exército, a Suíça não tem forças armadas permanentes e adota uma política de neutralidade desde 1815.</li>
+                <li><b>Quatro Línguas Oficiais:</b> Alemão, francês, italiano e romanche.</li>
+                <li><b>Bandeira Invertida:</b> A cruz branca é centrada em um fundo vermelho, sendo quadrada.</li>
+                <li><b>Cidades Limpas:</b> Conhecida por cidades extremamente limpas e organizadas.</li>
+                <li><b>Sistema de Transporte:</b> O transporte público é altamente eficiente.</li>
+                <li><b>Relógios de Alta Qualidade:</b> Marcas como Rolex, Swatch e Patek Philippe.</li>
+                <li><b>Chocolate de Classe Mundial:</b> Famosa por marcas como Lindt e Toblerone.</li>
+                <li><b>Invenções Incríveis:</b> Lar de invenções como o Velcro e o leite em pó.</li>
+                <li><b>Diversidade de Natureza:</b> 1.500 lagos, 1.800 glaciares e paisagens variadas.</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="galery" id="galery">
+            <h1>Galeria de Imagens</h1>
+            <div class="galeria">
+                <img src="/trabalho-web-main/imgsuiça/cidades-na-suica-2.jpg" alt="Imagem 1">
+                <img src="/trabalho-web-main/imgsuiça/cataratas.jpg" alt="Imagem 2">
+                <img src="/trabalho-web-main/imgsuiça/lago genebra.jpg" alt="Imagem 3">
+                <img src="/trabalho-web-main/imgsuiça/parque.jpg" alt="Imagem 4">
+                <img src="/trabalho-web-main/imgsuiça/jungfraujoch.jpg " alt="Imagem 5">
+            </div>
+
+            <!-- Modal -->
+            <div id="modal" class="modal">
+                <span id="close-gallery-modal" class="close">&times;</span>
+                <img id="modal-image" src="" alt="Imagem ampliada">
+            </div>
+            
+    </section>
+
+    <section class="form" id="form">
+        <form name="meu_form">
+
+            <h1>Dê um feedback</h1>
+          
+            <input type="text" id="nomeid" placeholder="Seu nome" required="required" name="nome" />
+            <label for="nome">Nome</label>
+          
+            <input type="email" id="emailid" placeholder="fulano@mail.com" required="required" name="email" />
+            <label for="email">Email</label>
+          
+            <textarea placeholder="Deixe sua opnião"></textarea>
+          
+            <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+          </form>
+    </section>
+    <div id="mensagem" class="mensagem"></div>
+
+</body>
+
+<script src="script.js"></script>
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.querySelector('nav');
+
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+</script>
+
+
+</html>
